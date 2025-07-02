@@ -1,0 +1,428 @@
+/* Modern Login Styles for Snipe-IT */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.modern-login-page {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modern-login-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.modern-login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 20px 20px 0 0;
+}
+
+.modern-login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modern-login-logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.modern-login-title {
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.modern-login-subtitle {
+    color: #7f8c8d;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.modern-form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.modern-form-group label {
+    display: block;
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.modern-form-control {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #e8ecef;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+.modern-form-control:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+}
+
+.modern-form-control::placeholder {
+    color: #adb5bd;
+}
+
+.modern-form-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.modern-form-group.has-icon .modern-form-control {
+    padding-right: 50px;
+}
+
+.modern-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.modern-checkbox {
+    position: relative;
+    margin-right: 12px;
+}
+
+.modern-checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.modern-checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e8ecef;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modern-checkbox input[type="checkbox"]:checked + .modern-checkbox-custom {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.modern-checkbox input[type="checkbox"]:checked + .modern-checkbox-custom::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.modern-checkbox-label {
+    color: #6c757d;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.modern-btn-primary {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+.modern-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.modern-btn-primary:active {
+    transform: translateY(0);
+}
+
+.modern-btn-google {
+    width: 100%;
+    background: #fff;
+    border: 2px solid #e8ecef;
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5f6368;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.modern-btn-google:hover {
+    border-color: #dadce0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.modern-btn-google i {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.modern-divider {
+    position: relative;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.modern-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e8ecef;
+}
+
+.modern-divider span {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0 20px;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modern-forgot-password {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.modern-forgot-password a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.modern-forgot-password a:hover {
+    color: #764ba2;
+}
+
+.modern-alert {
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.modern-alert-info {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+    color: #1565c0;
+}
+
+.modern-alert-danger {
+    background-color: #ffebee;
+    border-color: #ef9a9a;
+    color: #c62828;
+}
+
+.modern-error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.modern-error-message i {
+    margin-right: 6px;
+}
+
+.modern-privacy-link {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e8ecef;
+}
+
+.modern-privacy-link a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.modern-privacy-link a:hover {
+    color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .modern-login-page {
+        padding: 15px;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding-top: 10vh;
+    }
+    
+    .modern-login-container {
+        margin: 0;
+        padding: 30px 25px;
+        max-width: none;
+        width: 100%;
+    }
+    
+    .modern-login-title {
+        font-size: 24px;
+    }
+    
+    .modern-form-control {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
+    
+    .modern-btn-primary,
+    .modern-btn-google {
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+}
+
+@media (max-height: 700px) {
+    .modern-login-page {
+        align-items: flex-start;
+        padding-top: 5vh;
+    }
+}
+
+@media (min-height: 900px) {
+    .modern-login-page {
+        align-items: center;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .modern-login-page {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    }
+    
+    .modern-login-container {
+        background: rgba(44, 62, 80, 0.95);
+        color: #ecf0f1;
+    }
+    
+    .modern-login-title,
+    .modern-form-group label {
+        color: #ecf0f1;
+    }
+    
+    .modern-form-control {
+        background-color: rgba(52, 73, 94, 0.8);
+        border-color: #566a7a;
+        color: #ecf0f1;
+    }
+    
+    .modern-form-control:focus {
+        background-color: rgba(52, 73, 94, 0.9);
+        border-color: #667eea;
+    }
+}
+
+/* Animation for login container */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modern-login-container {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* Loading state for button */
+.modern-btn-primary.loading {
+    pointer-events: none;
+    position: relative;
+    color: transparent;
+}
+
+.modern-btn-primary.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid transparent;
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -85,6 +85,11 @@ class LoginController extends Controller
             return view('errors.403');
         }
 
+        // Use modern login if enabled
+        if (config('app.modern_login')) {
+            return view('auth.modern-login');
+        }
+
         return view('auth.login');
     }
 

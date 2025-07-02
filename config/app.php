@@ -50,6 +50,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Modern Login UI
+    |--------------------------------------------------------------------------
+    |
+    | This value determines whether to use the modern login interface.
+    | When set to true, users will see a more modern and responsive login page.
+    |
+    */
+
+    'modern_login' => env('MODERN_LOGIN', false),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Debug Mode
     |--------------------------------------------------------------------------
     |
